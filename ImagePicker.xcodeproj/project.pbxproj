@@ -15,6 +15,11 @@
 		C2608E431E92EBBA00647D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2608E411E92EBBA00647D7B /* LaunchScreen.storyboard */; };
 		C2608E4E1E92EBBB00647D7B /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E4D1E92EBBB00647D7B /* ImagePickerTests.swift */; };
 		C2608E591E92EBBB00647D7B /* ImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E581E92EBBB00647D7B /* ImagePickerUITests.swift */; };
+		C2608E671E92F5D000647D7B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E661E92F5D000647D7B /* CollectionViewController.swift */; };
+		C2608E691E9356A100647D7B /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E681E9356A100647D7B /* LocationViewController.swift */; };
+		C2DC17451E93FC580094AB21 /* VideoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */; };
+		C2DC17491E944FD00094AB21 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DC17471E944FD00094AB21 /* AVFoundation.framework */; };
+		C2DC174A1E944FD00094AB21 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DC17481E944FD00094AB21 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		C2608E541E92EBBB00647D7B /* ImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2608E581E92EBBB00647D7B /* ImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUITests.swift; sourceTree = "<group>"; };
 		C2608E5A1E92EBBB00647D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2608E661E92F5D000647D7B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../CollectionViewController.swift; sourceTree = "<group>"; };
+		C2608E681E9356A100647D7B /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLocationViewController.swift; sourceTree = "<group>"; };
+		C2DC17471E944FD00094AB21 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C2DC17481E944FD00094AB21 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2DC17491E944FD00094AB21 /* AVFoundation.framework in Frameworks */,
+				C2DC174A1E944FD00094AB21 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,7 @@
 				C2608E4C1E92EBBB00647D7B /* ImagePickerTests */,
 				C2608E571E92EBBB00647D7B /* ImagePickerUITests */,
 				C2608E331E92EBBA00647D7B /* Products */,
+				C2DC17461E944FD00094AB21 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,9 @@
 			children = (
 				C2608E351E92EBBA00647D7B /* AppDelegate.swift */,
 				C2608E371E92EBBA00647D7B /* ViewController.swift */,
+				C2608E661E92F5D000647D7B /* CollectionViewController.swift */,
+				C2608E681E9356A100647D7B /* LocationViewController.swift */,
+				C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */,
 				C2608E391E92EBBA00647D7B /* Main.storyboard */,
 				C2608E3F1E92EBBA00647D7B /* Assets.xcassets */,
 				C2608E411E92EBBA00647D7B /* LaunchScreen.storyboard */,
@@ -126,6 +142,15 @@
 				C2608E5A1E92EBBB00647D7B /* Info.plist */,
 			);
 			path = ImagePickerUITests;
+			sourceTree = "<group>";
+		};
+		C2DC17461E944FD00094AB21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC17471E944FD00094AB21 /* AVFoundation.framework */,
+				C2DC17481E944FD00094AB21 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,15 +221,19 @@
 				TargetAttributes = {
 					C2608E311E92EBBA00647D7B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PZTF3GBBPS;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					C2608E481E92EBBB00647D7B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C2608E311E92EBBA00647D7B;
 					};
 					C2608E531E92EBBB00647D7B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = C2608E311E92EBBA00647D7B;
 					};
@@ -262,9 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2608E691E9356A100647D7B /* LocationViewController.swift in Sources */,
+				C2608E671E92F5D000647D7B /* CollectionViewController.swift in Sources */,
 				C2608E381E92EBBA00647D7B /* ViewController.swift in Sources */,
 				C2608E361E92EBBA00647D7B /* AppDelegate.swift in Sources */,
 				C2608E3E1E92EBBA00647D7B /* ImagePicker.xcdatamodeld in Sources */,
+				C2DC17451E93FC580094AB21 /* VideoLocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PZTF3GBBPS;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bharath.ImagePicker;
@@ -426,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PZTF3GBBPS;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bharath.ImagePicker;
@@ -507,6 +541,7 @@
 				C2608E5F1E92EBBB00647D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2608E601E92EBBB00647D7B /* Build configuration list for PBXNativeTarget "ImagePickerTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +550,7 @@
 				C2608E621E92EBBB00647D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2608E631E92EBBB00647D7B /* Build configuration list for PBXNativeTarget "ImagePickerUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +559,7 @@
 				C2608E651E92EBBB00647D7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
