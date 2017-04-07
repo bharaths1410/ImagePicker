@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Jg7-dW-xJJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="lxB-LJ-bTY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -138,65 +138,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2um-pn-IVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="829.60000000000002" y="102.99850074962519"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="Biy-7I-uId">
-            <objects>
-                <navigationController id="qlL-c2-xaC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PV5-7e-fEB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="8Mu-jt-Xtt" kind="relationship" relationship="rootViewController" id="mSG-7Z-edh"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0mk-wg-s5U" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1724" y="61"/>
-        </scene>
-        <!--Location View Controller-->
-        <scene sceneID="7bw-EJ-ijQ">
-            <objects>
-                <viewController id="8Mu-jt-Xtt" customClass="LocationViewController" customModule="ImagePicker" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JgC-T1-nUP"/>
-                        <viewControllerLayoutGuide type="bottom" id="DOg-x6-VJB"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="osg-7p-aJQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fv-vD-OZj">
-                                <rect key="frame" x="105" y="284" width="167" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="UpdatePhoto">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="showPicker:" destination="8Mu-jt-Xtt" eventType="touchUpInside" id="2DO-AD-AAL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dai-yN-1yo">
-                                <rect key="frame" x="105" y="383" width="167" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31236994260000001" green="0.38258634870000002" blue="0.87135152279999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="UpdateVideo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="showVideo:" destination="6Og-pm-PJb" eventType="touchUpInside" id="i8Q-35-hPK"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="bVW-aW-TUw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2hK-A2-GLD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2528.8000000000002" y="3.1484257871064472"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="se5-zS-KKa">

@@ -37,10 +37,10 @@ class VideoLocationViewController: UIViewController, UIImagePickerControllerDele
         //image:didFinishSavingWithError:contextInfo
         let videoPath = videoURL?.relativePath
         
-//        if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoPath!))
-//        {
+        if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(videoPath!))
+        {
             UISaveVideoAtPathToSavedPhotosAlbum(videoPath!, self, aSelector, nil)
-//        }
+        }
         
         picker.dismiss(animated: true) {
 //            if let videoURL = self.videoURL{

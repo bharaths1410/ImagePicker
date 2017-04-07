@@ -16,7 +16,6 @@
 		C2608E4E1E92EBBB00647D7B /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E4D1E92EBBB00647D7B /* ImagePickerTests.swift */; };
 		C2608E591E92EBBB00647D7B /* ImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E581E92EBBB00647D7B /* ImagePickerUITests.swift */; };
 		C2608E671E92F5D000647D7B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E661E92F5D000647D7B /* CollectionViewController.swift */; };
-		C2608E691E9356A100647D7B /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2608E681E9356A100647D7B /* LocationViewController.swift */; };
 		C2DC17451E93FC580094AB21 /* VideoLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */; };
 		C2DC17491E944FD00094AB21 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DC17471E944FD00094AB21 /* AVFoundation.framework */; };
 		C2DC174A1E944FD00094AB21 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2DC17481E944FD00094AB21 /* AVKit.framework */; };
@@ -55,7 +54,6 @@
 		C2608E581E92EBBB00647D7B /* ImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUITests.swift; sourceTree = "<group>"; };
 		C2608E5A1E92EBBB00647D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2608E661E92F5D000647D7B /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewController.swift; path = ../CollectionViewController.swift; sourceTree = "<group>"; };
-		C2608E681E9356A100647D7B /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoLocationViewController.swift; sourceTree = "<group>"; };
 		C2DC17471E944FD00094AB21 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C2DC17481E944FD00094AB21 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
@@ -115,7 +113,6 @@
 				C2608E351E92EBBA00647D7B /* AppDelegate.swift */,
 				C2608E371E92EBBA00647D7B /* ViewController.swift */,
 				C2608E661E92F5D000647D7B /* CollectionViewController.swift */,
-				C2608E681E9356A100647D7B /* LocationViewController.swift */,
 				C2DC17441E93FC580094AB21 /* VideoLocationViewController.swift */,
 				C2608E391E92EBBA00647D7B /* Main.storyboard */,
 				C2608E3F1E92EBBA00647D7B /* Assets.xcassets */,
@@ -291,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2608E691E9356A100647D7B /* LocationViewController.swift in Sources */,
 				C2608E671E92F5D000647D7B /* CollectionViewController.swift in Sources */,
 				C2608E381E92EBBA00647D7B /* ViewController.swift in Sources */,
 				C2608E361E92EBBA00647D7B /* AppDelegate.swift in Sources */,
